@@ -1,0 +1,18 @@
+{
+  "name": "arquivei/laravel-prometheus",
+  "description": "Arquivei Prometheus package to set count and histogram metrics",
+  "keywords": ["prometheus", "arquivei"],
+  "license": "MIT",
+  "type": "project",
+  "require": {
+    "php": "^7.1.3",
+    "superbalist/laravel-prometheus-exporter": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Arquivei\\Prometheus": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
