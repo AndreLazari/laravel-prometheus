@@ -1,5 +1,5 @@
 {
-  "name": "Arquivei/laravel-prometheus",
+  "name": "arquivei/laravel-prometheus",
   "description": "Arquivei Prometheus package to set count and histogram metrics",
   "keywords": ["prometheus", "arquivei"],
   "license": "MIT",
