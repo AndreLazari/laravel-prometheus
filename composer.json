@@ -10,7 +10,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Arquivei\\Prometheus": "src/"
+      "Arquivei\\Prometheus\\": "src/"
     }
   },
   "minimum-stability": "dev",
