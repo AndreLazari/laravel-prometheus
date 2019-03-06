@@ -11,6 +11,7 @@ class HistogramMetric extends Metrics
     {
         $this->metric = $metric;
         $this->hint = $hint;
+        parent::getPrometheusInstance();
     }
 
     public function getMetric(): ?string
