@@ -9,7 +9,7 @@ class CountMetric extends Metrics
 {
     public function __construct(?string $metric, ?string $hint)
     {
-        $this->metric = $metric;
+        $this->metric = strtolower(preg_replace('/(?<!^)[A-Z]/', '_$0', $metric));
         $this->hint = $hint;
         parent::getPrometheusInstance();
     }
@@ -21,7 +21,7 @@ class CountMetric extends Metrics
 
     public function setMetric(string $metric): CountMetric
     {
-        $this->metric = $metric;
+        $this->metric = strtolower(preg_replace('/(?<!^)[A-Z]/', '_$0', $metric));
         return $this;
     }
 
