@@ -9,7 +9,7 @@ class HistogramMetric extends Metrics
 {
     public function __construct(?string $metric, ?string $hint)
     {
-        $this->metric = strtolower(preg_replace('/(?<!^)[A-Z]/', '_$0', $metric));
+        $this->metric = strtolower(preg_replace('/(?<!^)([a-z])([A-Z])/', '$1_$2', $metric));
         $this->hint = $hint;
         parent::getPrometheusInstance();
     }
@@ -21,7 +21,7 @@ class HistogramMetric extends Metrics
 
     public function setMetric(string $metric): HistogramMetric
     {
-        $this->metric = strtolower(preg_replace('/(?<!^)[A-Z]/', '_$0', $metric));
+        $this->metric = strtolower(preg_replace('/(?<!^)([a-z])([A-Z])/', '$1_$2', $metric));
         return $this;
     }
 
