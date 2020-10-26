@@ -1,6 +1,6 @@
 <?php
 
-namespace Arquivei\Prometheus\Count;
+namespace Arquivei\Prometheus\Metrics;
 
 use Arquivei\Prometheus\Metrics;
 use Prometheus\Exception\MetricNotFoundException;
